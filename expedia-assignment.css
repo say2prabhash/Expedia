@@ -31,7 +31,7 @@ body,html{
 				width:100%;
 				display: flex;
 				background-color: black;
-				opacity: 0.7;
+				opacity: 0.9;
 				flex-direction: column;
 				padding-right: 40px;
 				padding-left: 10px;
@@ -53,7 +53,8 @@ body,html{
 			height:40px;
 			background-color: red;
 			opacity:0.97;
-    		margin: 5px;
+    		margin: 4px;
+    		border-radius: 10px;
     		align-content: center;
 }
 #text-info-flex{
@@ -94,7 +95,7 @@ body,html{
 			display: flex;
 			width: 100px;
 			height: 40px;
-			margin: 1px;
+			border-radius: 5px;
 			background-color: gray;
 }
 p{
@@ -133,5 +134,6 @@ p{
 #submit{
 		width: 150px;
 		height: 50px;
+		border-radius: 20px;
 		background-color: yellow;
 }

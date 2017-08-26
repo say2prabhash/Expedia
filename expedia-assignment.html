@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="expedia-assignment.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="expedia-assignment.js"></script> 
+	</head>
+	<body>
+			<div id="nav-container">
+			<nav></nav>
+		</div>
+		<div id="main-container">
+			<div id="parent-container">
+				<div id="child-container">
+					<div id="button-container">
+						<div class="button-flex"><p>Flights</p></div>
+						<div class="button-flex"><p>Hotel</p></div>
+					</div>
+					<div id="trip-button-flex">
+						<div class="trip-flex"><p>One-way</p></div>
+						<div class="trip-flex"><p>Round</p></div>
+					</div>
+					<div class="flight-info-input-text">
+					<div id="text-info-flex"><p class="text-info">Flying From</p>
+					<p class="text-info">Flying To</p></div>
+					</div>
+					<div class="input-box">
+					<input id="flyingFrom" class="input-box-dimension" type="text">
+					<input id="flyingTo" class="input-box-dimension" type="text">
+					</div>
+					<div class="flight-info-input-text">
+					<div id="departure-info-flex">
+					<p class="text-info">Departure</p>
+					<p class="text-info">Adults(18+)</p>
+					<p class="text-info">Children(0-17)</p>
+					</div>
+					</div>
+					<div id="departure-input-box">
+					<input id="departure" value="mm/dd/yyyy" type="text">
+					<select id="adults">
+  					<option value="1">1</option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5</option> 
+  					<option value="6">6</option>
+					</select>
+					<select id="children">
+					<option value="0">0</option>
+  					<option value="1">1</option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5</option> 
+  					<option value="6">6</option>
+					</select>
+					</div>
+					<div id="submit-flex">
+						<input id="submit" type="button" value="Submit" name="submitButton">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

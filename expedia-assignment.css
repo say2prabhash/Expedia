@@ -1,139 +1,168 @@
-body,html{
-		margin: 0;
-		padding: 0;
+body, html {
+    margin: 0;
+    padding: 0;
 }
-#main-container{
-			width: 100%;
-			height: 450px;
-			display: flex;
-			padding-top: 200px;
-			padding-bottom: 200px;
-}
-#nav-container{
-				width: 100%;
-				height: 20px;
-				display:flex;
-				background-color: yellow;
-}
-#parent-container{
-				width:100%;
-				height:100%;
-				display: flex;
-				background: url("parent_container_background.jpg");
-				opacity:0.9;
-				padding-right: 30px;
-				padding-bottom: 40px;
-				padding-left: 30px;
-				padding-top: 40px;
-}
-#child-container{
 
-				width:100%;
-				display: flex;
-				background-color: black;
-				opacity: 0.9;
-				flex-direction: column;
-				padding-right: 40px;
-				padding-left: 10px;
+#main-container {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-#button-container{
-					width:100%;
-					height: 50px;
-					display: flex;
-					flex-direction: row;
-					padding-top: 80px;
+
+#nav-container {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    background-color: yellow;
 }
-.button-text-alignment{
-						text-align: center;
+
+#parent-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url("parent_container_background.jpg");
+    opacity: 0.9;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-top: 40px;
 }
-.button-flex{
-			width:80px;
-			height: 50px;
-			display: flex;
-			height:40px;
-			background-color: red;
-			opacity:0.97;
-    		margin: 4px;
-    		border-radius: 10px;
-    		align-content: center;
+
+#child-container {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    opacity: 0.9;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 10px;
+    border-radius: 7px;
 }
-#text-info-flex{
-				display: flex;
-				width: 456px;
-				height: 40px;
-				padding: 1px;
-				flex-direction: row;
-				justify-content: space-between;
+
+#button-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
 }
-.text-info{
-			font-size: 15px;
-			color:white;
+
+.button-text-alignment {
+    text-align: center;
 }
-.flight-info-input-text{
-					display: flex;
-					justify-content: space-between;
-					flex-direction: row;
-					width: 550px;
-				}
-.input-box{
-			width:700px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+
+.button-flex {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    height: 40px;
+    background-color: red;
+    opacity: 0.97;
+    margin: 4px;
+    border-radius: 10px;
+    align-content: center;
 }
-#trip-button-flex{
-					display: flex;
-					flex-direction: row;
-					width:150px;
-					padding: 10px;
+
+#text-info-flex {
+    display: flex;
+    width: 456px;
+    height: 40px;
+    padding: 1px;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.input-box-dimension{
-						width:300px;
-						height: 20px;
+
+.text-info {
+    font-size: 15px;
+    color: white;
 }
-.trip-flex{
-			display: flex;
-			width: 100px;
-			height: 40px;
-			border-radius: 5px;
-			background-color: gray;
+
+.flight-info-input-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 460px;
 }
-p{
-	color: white;
+
+.input-box {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#departure-info-flex{
-				display: flex;
-				width: 600px;
-				height: 40px;
-				flex-direction: row;
-				justify-content: space-between;
+
+#trip-button-flex {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    padding: 10px;
 }
-#adults{
-		width:90px;
-		height:30px;
+
+.input-box-dimension {
+    width: 300px;
+    height: 20px;
 }
-#children{
-		width:60px;
-		height:30px;
+
+.trip-flex {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
 }
-#departure-input-box{
-			width:520px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+
+p {
+    color: white;
 }
-#departure{
-			width:150px;
+
+#departure-info-flex {
+    display: flex;
+    width: 600px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#submit-flex{
-			display: flex;
-			width: 200px;
-			justify-content: flex-start;
-			padding: 30px;
+
+#adults {
+    width: 90px;
+    height: 30px;
 }
-#submit{
-		width: 150px;
-		height: 50px;
-		border-radius: 20px;
-		background-color: yellow;
+
+#children {
+    width: 60px;
+    height: 30px;
+}
+
+#departure-input-box {
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#departure {
+    width: 150px;
+}
+
+#submit-flex {
+    display: flex;
+    width: 200px;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+#submit {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.departure-info-input-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 410px;
 }

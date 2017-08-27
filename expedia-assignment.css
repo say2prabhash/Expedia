@@ -2,22 +2,31 @@ body, html {
     margin: 0;
     padding: 0;
 }
+form{
+	overflow: hidden;
 
+}
 #main-container {
     width: 100%;
     height: 450px;
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 30px;
 }
 
-#nav-container {
+#notification-container {
     width: 100%;
     height: 20px;
     display: flex;
     background-color: yellow;
 }
 
+#logo-container{
+			display: flex;
+			width:200px;
+			height: 60px;
+			padding-left: 50px;
+			padding-top: 50px;
+}
 #parent-container {
     width: 100%;
     height: 100%;
@@ -30,7 +39,7 @@ body, html {
     padding-top: 40px;
 }
 
-#child-container {
+#flight-child-container {
     width: 100%;
     display: flex;
     background-color: black;
@@ -39,6 +48,17 @@ body, html {
     padding-right: 40px;
     padding-left: 10px;
     border-radius: 7px;
+}
+#hotel-child-container {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    opacity: 0.9;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 10px;
+    border-radius: 7px;
+    display: none;
 }
 
 #button-container {
@@ -79,7 +99,7 @@ body, html {
     color: white;
 }
 
-.flight-info-input-text {
+.info-input-text {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -99,7 +119,10 @@ body, html {
     width: 150px;
     padding: 10px;
 }
-
+.datepicker{
+			width: 90px;
+			height: 20px;
+}
 .input-box-dimension {
     width: 300px;
     height: 20px;
@@ -125,7 +148,13 @@ p {
     flex-direction: row;
     justify-content: space-between;
 }
-
+#hotel-info-flex {
+    display: flex;
+    width: 628px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #adults {
     width: 90px;
     height: 30px;
@@ -137,12 +166,17 @@ p {
 }
 
 #departure-input-box {
-    width: 520px;
+    width: 628px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
+#hotel-input-box {
+    width: 628px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #departure {
     width: 150px;
 }
@@ -164,5 +198,5 @@ p {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 410px;
+    width: 100%;
 }

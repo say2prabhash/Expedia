@@ -6,15 +6,17 @@
     <script type="text/javascript" src="expedia-assignment.js"></script>
 </head>
 <body>
-    <div id="nav-container">
-        <nav></nav>
+    <div id="notification-container">
+    </div>
+    <div id="logo-container">
+    <img src="expedialogo.png">
     </div>
     <div id="main-container">
         <div id="parent-container">
-            <div id="child-container">
+            <div id="flight-child-container">
                 <div id="button-container">
-                    <div class="button-flex"><p>Flights</p></div>
-                    <div class="button-flex"><p>Hotel</p></div>
+                    <button id="flights" class="button-flex">Flights</button>
+                    <button id="hotels" class="button-flex">Hotel</button>
                 </div>
                 <div id="trip-button-flex">
                     <button id="oneWay" class="trip-flex">One-way</button>
@@ -61,6 +63,63 @@
                 <div id="submit-flex">
                     <input id="submit" type="button" value="Submit" name="submitButton">
                 </div>
+                </form>
+            </div>
+             <div id="hotel-child-container">
+                <div id="button-container">
+                    <button id="flight" class="button-flex">Flights</button>
+                    <button id="hotels" class="button-flex">Hotel</button>
+                </div>
+                <form>
+                <div class="info-input-text">
+                    <div id="text-info-flex">
+                        <p class="text-info">Going To</p>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input id="goingTo" class="input-box-dimension" type="text">
+                </div>
+                <div  class="departure-info-input-text">
+                    <div id="hotel-info-flex">
+                          <p class="text-info">Adults(18+)</p>
+                        <p class="text-info">Children(0-17)</p>
+                        <p id="check-in-text" class="text-info">Check-in</p>
+                        <p id="check-out-text" class="text-info">Check-out</p>
+                        <p id="room" class="text-info">Rooms</p>
+                    </div>
+                </div>
+                <div id="hotel-input-box">
+                    <select id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <select id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <input id="checkIn" class="datepicker" value="mm/dd/yyyy" type="text">
+                    <input id="checkOut" class="datepicker" value="mm/dd/yyyy" type="text">
+                     <select id="rooms">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div id="submit-flex">
+                     <input id="submit" type="button" value="Submit" name="submitButton">
+            </div>
                 </form>
             </div>
         </div>

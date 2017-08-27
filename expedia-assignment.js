@@ -1,7 +1,6 @@
 	$(document).ready(
 	    function () {
 	       
-	 // $("#parent-container").find("#hotel-child-container").attr("display","none");
 	$("#return").click(function() {
 		$(this).attr("disabled",true);
 	    $("#departure-info-flex").append("<p id=\"returnText\"class=\"text-info\">Returning</p>");
@@ -25,7 +24,8 @@
 	 $(".datepicker").datepicker({
 	            changeMonth: true,
 	            changeYear: true,
-	            minDate:'0m+0d'
+	            minDate:'0m+0d',
+	            showAnim: "fadeIn"
 	        }
 	   );
 	 $("#flight").click(function(){

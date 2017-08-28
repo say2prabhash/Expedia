@@ -31,8 +31,9 @@ form{
     width: 100%;
     height: 100%;
     display: flex;
-    background: url("bua_hero.jpg");
-    background-repeat: round;
+    background: url("http://1.bp.blogspot.com/-_aJuw2iA8Ak/VCgZ-lbj-VI/AAAAAAAAANA/9LGTsmP3OIE/s1600/tropical-dream-wallpapers_30260_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.9;
     padding-right: 30px;
     padding-bottom: 40px;
@@ -44,10 +45,10 @@ form{
     width: 100%;
     display: flex;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.6;
     flex-direction: column;
     padding-right: 40px;
-    padding-left: 10px;
+    padding-left: 40px;
     border-radius: 7px;
 }
 #hotel-child-container {
@@ -57,21 +58,23 @@ form{
     opacity: 0.75;
     flex-direction: column;
     padding-right: 40px;
-    padding-left: 10px;
+    padding-left: 40px;
     border-radius: 7px;
     display: none;
 }
 ul{
     display: flex;
     flex-direction: row;
-    /*border: 20px;*/
+    padding-left: 5px;
 }
 li{
     display: flex;
     width: 60px;
-    height: 30px;
-    padding-right: 10px;
+    height: 40px;
+    justify-content: center;
     border: 2px solid yellow;
+     border-radius: 5px;
+     border-spacing: 5px;
 }
 a{
     color:white;
@@ -83,7 +86,7 @@ a{
     flex-direction: row;
     padding-top: 10px;
     padding-bottom: 10px;
-   /* background-color: red;*/
+   /* background-color: blue;*/
 }
 
 .button-text-alignment {
@@ -96,7 +99,7 @@ a{
     display: flex;
     height: 40px;
     color: yellow;
-    background-color: rgb(0,0,136);
+   /* background-color: rgb(0,0,136);*/
     justify-content: center;
     opacity: 0.97;
     margin: 4px;
@@ -115,7 +118,8 @@ a{
 
 .text-info {
     font-size: 15px;
-    color: yellow;
+    color: whitesmoke;
+    font-size:large;
 }
 
 .info-input-text {
@@ -138,13 +142,22 @@ a{
     width: 150px;
     padding: 10px;
 }
+button{
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: deepskyblue;
+}
 .datepicker{
 			width: 90px;
 			height: 20px;
 }
 .input-box-dimension {
+    display: flex;
+    border-radius: 15px;
     width: 300px;
     height: 20px;
+    background-color: lightyellow;
 }
 
 .trip-flex {
@@ -175,13 +188,19 @@ p {
     justify-content: space-between;
 }
 #adults {
+    display: flex;
+    border-radius: 15px;
     width: 90px;
     height: 30px;
+    background-color: lightyellow;
 }
 
 #children {
+    display: flex;
+    border-radius: 15px;
     width: 60px;
     height: 30px;
+    background-color: lightyellow;
 }
 
 #departure-input-box {
@@ -203,10 +222,9 @@ p {
 #submit-flex {
     display: flex;
     width: 200px;
-    justify-content: flex-start;
+    padding-top: 20px;
     padding: 30px;
 }
-
 #submit {
     width: 150px;
     height: 50px;
@@ -219,4 +237,9 @@ p {
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
+}
+.datepicker{
+    display: flex;
+    border-radius: 15px;
+    background-color: lightyellow;
 }

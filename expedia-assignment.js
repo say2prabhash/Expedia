@@ -7,12 +7,6 @@
 	$("#return").click(function() {
 		$("#return-text").show();
 		$("#returning").show();
-	    // $("#departure-info-flex").append("<p id=\"returnText\"class=\"text-info\">Returning</p>");
-	    // $("#departure-input-box").append("<input class=\"datepicker\" id=\"returnDate\" value=\"mm/dd/yyyy\" type=\"text\">");
-	    // $('#departure-input-box').find('#returnDate').datepicker({changeMonth: true,changeYear: true,minDate:'0m+0d'});
-	    // $(".departure-info-input-text").css("width","100%");
-	    // $("#deparure-info-flex").css("width","680px");
-	    // $('#departure-input-box').css("width","630px");
 	});
 	$("#checkIn").datepicker({
 					changeMonth: true,
@@ -35,11 +29,13 @@
 	 $("#button-container #flights").click(function(){
 	 		$("#hotel-child-container").css("display","none");
 	 		$("#departure-info-flex").css("width","600px");
-	 		$("#flight-child-container").css("display","block");
+	 		$("#flight-child-container").css("display","flex");
+	 		$("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
 	 });
 	 $("#hotels").click(function(){
 	 			$("#flight-child-container").css("display","none");
-	 			$("#hotel-child-container").css("display","block");
+	 			$("#parent-container").css("background","url(\"http://www.aceprofitsacademy.com/wp-content/uploads/2016/01/shutterstock_95926138_gdk5a6.jpg\")");
+	 			$("#hotel-child-container").css("display","flex");
 	 			$("#hotel-child-container").find("#button-container").tabs(); 
 	 			$("#departure-info-input-text").css("width","100%");
 	 			$("#departure-input-box").css("width","600px");
@@ -52,6 +48,10 @@
 			$("#departure-input-box").css("width","628px");
 			}
 	);
+	 $("#rooms").on("change",function(){
+	 				var val=$("#rooms option:selected").val();
+	 				val=val;
+	 });
 	}
 	 );
 	

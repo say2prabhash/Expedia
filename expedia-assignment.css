@@ -32,6 +32,7 @@ form{
     height: 100%;
     display: flex;
     background: url("bua_hero.jpg");
+    background-repeat: round;
     opacity: 0.9;
     padding-right: 30px;
     padding-bottom: 40px;
@@ -43,7 +44,7 @@ form{
     width: 100%;
     display: flex;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.75;
     flex-direction: column;
     padding-right: 40px;
     padding-left: 10px;
@@ -53,7 +54,7 @@ form{
     width: 100%;
     display: flex;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.75;
     flex-direction: column;
     padding-right: 40px;
     padding-left: 10px;

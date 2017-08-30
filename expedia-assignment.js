@@ -48,9 +48,27 @@
 			$("#departure-input-box").css("width","628px");
 			}
 	);
+	 var val=0;
 	 $("#rooms").on("change",function(){
-	 				var val=$("#rooms option:selected").val();
-	 				val=val;
+	 				$("#adultsText").hide();
+	 				$("#childrenText").hide();
+	 				$("#extraRoom #adults").hide();
+	 				$("#extraRoom #children").hide();
+	 				 val=$("#rooms option:selected").val();
+	 				
+	 				for(i=val;i>0;i--)
+	 				{
+	 					$("#extraRoom").append("<div id=\"extraRooms\"><div id=\"roomNumber\"><p id=\"roomnum\">Room</p><select id=\"adults\"><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option></select></div></div>");
+                    // <select id=\"children\">
+                    //     <option value=0>0</option>
+                    //     <option value=1>1</option>
+                    //     <option value=2>2</option>
+                    //     <option value=3>3</option>
+                    //     <option value=4>4</option>
+                    //     <option value=5>5</option>
+                    //     <option value=6>6</option>
+                    // </select></div></div>);
+	 				}
 	 });
 	}
 	 );

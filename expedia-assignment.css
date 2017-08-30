@@ -71,6 +71,7 @@ li{
     display: flex;
     width: 60px;
     height: 40px;
+    padding-right: 20px;
     justify-content: center;
     border: 2px solid yellow;
      border-radius: 5px;
@@ -225,13 +226,23 @@ p {
     padding-top: 20px;
     padding: 30px;
 }
-#submit {
+
+#hotelSubmit {
     width: 150px;
     height: 50px;
     border-radius: 20px;
     background-color: yellow;
     font-weight: bold;
 }
+
+#flightSubmit {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: yellow;
+    font-weight: bold;
+}
+
 .departure-info-input-text {
     display: flex;
     justify-content: space-between;
@@ -242,4 +253,16 @@ p {
     display: flex;
     border-radius: 15px;
     background-color: lightyellow;
+}
+#extraRoom{
+            display: flex;
+            flex-direction: column;
+}
+#extraRooms{
+    display: flex;
+    flex-direction: column;
+}
+#roomNumber{
+            display: flex;
+            flex-direction: row;
 }

@@ -65,7 +65,7 @@
                     <input id="returning" class="datepicker" value="mm/dd/yyyy" type="text">
                 </div>
                 <div id="submit-flex">
-                    <input id="submit" type="button" value="Submit" name="submitButton">
+                    <input id="flightSubmit" type="button" value="Submit" name="submitButton">
                 </div>
                 </form>
             </div>
@@ -87,8 +87,8 @@
                 </div>
                 <div  class="departure-info-input-text">
                     <div id="hotel-info-flex">
-                          <p class="text-info">Adults(18+)</p>
-                        <p class="text-info">Children(0-17)</p>
+                        <p id="adultsText" class="text-info">Adults(18+)</p>
+                        <p id="childrenText" class="text-info">Children(0-17)</p>
                         <p id="check-in-text" class="text-info">Check-in</p>
                         <p id="check-out-text" class="text-info">Check-out</p>
                         <p id="room" class="text-info">Rooms</p>
@@ -122,9 +122,13 @@
                         <option value="5">5</option>
                         <option value="6">6</option>
                     </select>
+                     <div id=extraRoom>
                 </div>
+                </div>
+                <div>
                 <div id="submit-flex">
-                     <input id="submit" type="button" value="Submit" name="submitButton">
+                     <input id="hotelSubmit" type="button" value="Submit" name="submitButton">
+            </div>
             </div>
                 </form>
             </div>

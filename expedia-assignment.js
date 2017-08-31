@@ -30,12 +30,20 @@
 	 		$("#hotel-child-container").css("display","none");
 	 		$("#departure-info-flex").css("width","600px");
 	 		$("#flight-child-container").css("display","flex");
-	 		$("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
+	 		$("#button-container #flights").css("background-color","blue");
+	 		$("#button-container #flights").css("color","white");
+	 		$("#button-container #hotels").css("background-color","white");
+	 		$("#button-container #hotels").css("color","black");
+	 		// $("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
 	 });
 	 $("#hotels").click(function(){
 	 			$("#flight-child-container").css("display","none");
 	 			$("#parent-container").css("background","url(\"http://www.aceprofitsacademy.com/wp-content/uploads/2016/01/shutterstock_95926138_gdk5a6.jpg\")");
 	 			$("#hotel-child-container").css("display","flex");
+	 			$("#button-container #flights").css("background-color","white");
+	 			$("#button-container #flights").css("color","black");
+	 			$("#button-container #hotels").css("background-color","blue");
+	 			$("#button-container #hotels").css("color","white");
 	 			$("#hotel-child-container").find("#button-container").tabs(); 
 	 			$("#departure-info-input-text").css("width","100%");
 	 			$("#departure-input-box").css("width","600px");
@@ -45,30 +53,43 @@
 			$("#return-text").hide();
 	    	$("#returning").hide();
 			$(".departure-info-input-text").css("width","100%");
-			$("#departure-input-box").css("width","628px");
+			$("#departure-input-box").css("width","600px");
 			}
 	);
 	 var val=0;
 	 $("#rooms").on("change",function(){
-	 				$("#adultsText").hide();
-	 				$("#childrenText").hide();
-	 				$("#extraRoom #adults").hide();
-	 				$("#extraRoom #children").hide();
+	 				$("#rooms-info").empty();
 	 				 val=$("#rooms option:selected").val();
-	 				
-	 				for(i=val;i>0;i--)
+	 				 var appendRooms="<div id=\"room-info-flex\">\
+	 				 <p id=\"adultsText\" class=\"text-info\">Adults(18+)</p>\
+	 				 <p id=\"childenText\" class=\"text-info\">Children(0-17)</p>\
+	 				 </div>";
+	 				 var appendRoomInfo="<div id=\"room-input-box\">\
+                    <select id=\"adults\">\
+                        <option value=\"1\">1</option>\
+                        <option value=\"2\">2</option>\
+                        <option value=\"3\">3</option>\
+                        <option value=\"4\">4</option>\
+                        <option value=\"5\">5</option>\
+                        <option value=\"6\">6</option>\
+                    </select>\
+                    <select id=\"children\">\
+                        <option value=\"0\">0</option>\
+                        <option value=\"1\">1</option>\
+                        <option value=\"2\">2</option>\
+                        <option value=\"3\">3</option>\
+                        <option value=\"4\">4</option>\
+                        <option value=\"5\">5</option>\
+                        <option value=\"6\">6</option>\
+                    </select>\
+                    </div>";
+	 				for(i=0;i<val;i++)
 	 				{
-	 					$("#extraRoom").append("<div id=\"extraRooms\"><div id=\"roomNumber\"><p id=\"roomnum\">Room</p><select id=\"adults\"><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option></select></div></div>");
-                    // <select id=\"children\">
-                    //     <option value=0>0</option>
-                    //     <option value=1>1</option>
-                    //     <option value=2>2</option>
-                    //     <option value=3>3</option>
-                    //     <option value=4>4</option>
-                    //     <option value=5>5</option>
-                    //     <option value=6>6</option>
-                    // </select></div></div>);
-	 				}
+	 					 var individualRoom = '<div id="roomNumber"><p>Room ' + (i + 1) + '</p></div>';
+	 					$("#rooms-info").append(individualRoom);
+	 					$("#rooms-info").append(appendRooms);
+  						$("#rooms-info").append(appendRoomInfo);
+  						}
 	 });
 	}
 	 );

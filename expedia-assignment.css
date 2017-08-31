@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow: none;
+    clear: both;
 }
 form{
 	overflow: hidden;
@@ -11,6 +13,7 @@ form{
     height: 450px;
     display: flex;
     padding-top: 30px;
+    height: auto;
 }
 
 #notification-container {
@@ -29,7 +32,7 @@ form{
 }
 #parent-container {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     background: url("http://1.bp.blogspot.com/-_aJuw2iA8Ak/VCgZ-lbj-VI/AAAAAAAAANA/9LGTsmP3OIE/s1600/tropical-dream-wallpapers_30260_1920x1080.jpg");
     background-repeat: no-repeat;
@@ -45,7 +48,7 @@ form{
     width: 100%;
     display: flex;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.75;
     flex-direction: column;
     padding-right: 40px;
     padding-left: 40px;
@@ -61,6 +64,8 @@ form{
     padding-left: 40px;
     border-radius: 7px;
     display: none;
+    height: : auto;
+
 }
 ul{
     display: flex;
@@ -77,9 +82,15 @@ li{
      border-radius: 5px;
      border-spacing: 5px;
 }
-a{
+#flights{
+    background-color: blue;
     color:white;
 }
+#hotels{
+    background-color: white;
+    color:black;
+}
+
 #button-container {
     width: 100%;
     height: 50px;
@@ -104,7 +115,7 @@ a{
     justify-content: center;
     opacity: 0.97;
     margin: 4px;
-    border-radius: 10px;
+    border-radius: 20px;
     align-content: center;
 }
 
@@ -150,14 +161,14 @@ button{
         background-color: deepskyblue;
 }
 .datepicker{
-			width: 90px;
+			width: 78px;
 			height: 20px;
 }
 .input-box-dimension {
     display: flex;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 300px;
-    height: 20px;
+    height: 25px;
     background-color: lightyellow;
 }
 
@@ -183,7 +194,7 @@ p {
 }
 #hotel-info-flex {
     display: flex;
-    width: 628px;
+    width: 500px;
     height: 40px;
     flex-direction: row;
     justify-content: space-between;
@@ -191,27 +202,27 @@ p {
 #adults {
     display: flex;
     border-radius: 15px;
-    width: 90px;
-    height: 30px;
+    width: 70px;
+    height: 18px;
     background-color: lightyellow;
 }
 
 #children {
     display: flex;
     border-radius: 15px;
-    width: 60px;
-    height: 30px;
+    width: 70px;
+    height: 18px;
     background-color: lightyellow;
 }
 
 #departure-input-box {
-    width: 628px;
+    width: 605px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 #hotel-input-box {
-    width: 628px;
+    width: 480px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -263,6 +274,34 @@ p {
     flex-direction: column;
 }
 #roomNumber{
+            width:80px;
+            height:30px;
+            padding: 0;
+            margin: 0;
             display: flex;
             flex-direction: row;
+}
+#customerInfo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#room-info-flex
+{
+     display: flex;
+    width: 250px;
+    height: 45px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#room-input-box {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#rooms-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

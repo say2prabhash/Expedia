@@ -35,7 +35,7 @@
 	 		$("#flight-child-container").css("display","flex");
 	 		$("#button-container #flights").css("background-color","blue");
 	 		$("#button-container #hotels").css("background-color","inherit");
-	 		// $("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
+	 		$("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
 	 });
 	 $("#hotels").click(function(){
 	 			$("#flight-child-container").css("display","none");

@@ -86,16 +86,27 @@ li{
     background-color: blue;
     color:white;
 }
+#oneWay{
+    border:2px,solid,solid-black;
+    background-color: blue;
+    color:white;
+}
+#return{
+    border:2px,solid,solid-black;
+    background-color: inherit;
+    color:white;
+}
 #hotels{
-    background-color: white;
-    color:black;
+    background-color: inherit;
+    color:white;
 }
 
 #button-container {
-    width: 100%;
+    width: 150px;
     height: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
    /* background-color: blue;*/
@@ -304,4 +315,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.category-buttons{
+    border: 2px solid solid-black;
+    border-radius: 5px;
+    padding-right: 10px;
+    height: 45px;
 }

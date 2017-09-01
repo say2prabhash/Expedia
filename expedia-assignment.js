@@ -2,9 +2,12 @@
 	    function () {
 	    	$("#return-text").hide();
 	    	$("#returning").hide();
-	  $("#button-container").tabs(); 
-	  $("#trip-button-flex").tabs();    
+	  // $("#button-container").tabs(); 
+	  // $("#trip-button-flex").tabs();    
 	$("#return").click(function() {
+		$("#oneWay").css("background-color","inherit");
+		$("#return").css("background-color","blue");
+		$("#oneWay").css("")
 		$("#return-text").show();
 		$("#returning").show();
 	});
@@ -31,19 +34,15 @@
 	 		$("#departure-info-flex").css("width","600px");
 	 		$("#flight-child-container").css("display","flex");
 	 		$("#button-container #flights").css("background-color","blue");
-	 		$("#button-container #flights").css("color","white");
-	 		$("#button-container #hotels").css("background-color","white");
-	 		$("#button-container #hotels").css("color","black");
+	 		$("#button-container #hotels").css("background-color","inherit");
 	 		// $("#parent-container").css("background","url(\"https://productimages.withfloats.com/actual/5909a04fff82870b5c402b8e.jpg\")");
 	 });
 	 $("#hotels").click(function(){
 	 			$("#flight-child-container").css("display","none");
 	 			$("#parent-container").css("background","url(\"http://www.aceprofitsacademy.com/wp-content/uploads/2016/01/shutterstock_95926138_gdk5a6.jpg\")");
 	 			$("#hotel-child-container").css("display","flex");
-	 			$("#button-container #flights").css("background-color","white");
-	 			$("#button-container #flights").css("color","black");
+	 			$("#button-container #flights").css("background-color","inherit");
 	 			$("#button-container #hotels").css("background-color","blue");
-	 			$("#button-container #hotels").css("color","white");
 	 			$("#hotel-child-container").find("#button-container").tabs(); 
 	 			$("#departure-info-input-text").css("width","100%");
 	 			$("#departure-input-box").css("width","600px");
@@ -52,6 +51,8 @@
 	 $("#oneWay").on("click",function(){
 			$("#return-text").hide();
 	    	$("#returning").hide();
+	    	$("#oneWay").css("background-color","blue");
+			$("#return").css("background-color","inherit");
 			$(".departure-info-input-text").css("width","100%");
 			$("#departure-input-box").css("width","600px");
 			}

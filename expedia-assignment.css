@@ -85,7 +85,7 @@ li{
 }
 #flights{
     background-image: url("plane.png");
-    background-position: 25 0px;
+    background-position: top;
     background-repeat: no-repeat;
     background-color: blue;
     color:white;
@@ -102,7 +102,7 @@ li{
 }
 #hotels{
      background-image: url("hotel.png");
-    background-position: 25 0px;
+    background-position: top;
     background-repeat: no-repeat;
     background-color: inherit;
     color:white;

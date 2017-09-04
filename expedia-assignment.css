@@ -10,6 +10,7 @@ form{
 }
 #main-container {
     width: 100%;
+    position: absolute;
     height: 450px;
     display: flex;
     padding-top: 30px;

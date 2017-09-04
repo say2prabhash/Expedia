@@ -27,6 +27,7 @@
 	            minDate:'0m+0d',
 	            showAnim: "fadeIn",
 	            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+	           
 	        }
 	   );
 	 $("#button-container #flights").click(function(){

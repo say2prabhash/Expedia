@@ -27,7 +27,7 @@
 	            minDate:'0m+0d',
 	            showAnim: "fadeIn",
 	            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-	           
+
 	        }
 	   );
 	 $("#button-container #flights").click(function(){
@@ -44,7 +44,7 @@
 	 			$("#hotel-child-container").css("display","flex");
 	 			$("#button-container #flights").css("background-color","inherit");
 	 			$("#button-container #hotels").css("background-color","blue");
-	 			$("#hotel-child-container").find("#button-container").tabs(); 
+	 			// $("#hotel-child-container").find("#button-container").tabs(); 
 	 			$("#departure-info-input-text").css("width","100%");
 	 			$("#departure-input-box").css("width","600px");
 	 }
@@ -87,7 +87,7 @@
                     </div>";
 	 				for(i=0;i<val;i++)
 	 				{
-	 					 var individualRoom = '<div id="roomNumber"><p>Room ' + (i + 1) + '</p></div>';
+	 					 var individualRoom = "<div id=\"roomNumber\"><p>Room " + (i + 1) + "</p></div>";
 	 					$("#rooms-info").append(individualRoom);
 	 					$("#rooms-info").append(appendRooms);
   						$("#rooms-info").append(appendRoomInfo);

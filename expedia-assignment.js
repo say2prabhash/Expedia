@@ -62,6 +62,8 @@
 	 $("#rooms").on("change",function(){
 	 				$("#rooms-info").empty();
 	 				 val=$("#rooms option:selected").val();
+	 				 	for(i=1;i<=val;i++)
+	 				{
 	 				 var appendRooms="<div id=\"room-info-flex\">\
 	 				 <p id=\"adultsText\" class=\"text-info\">Adults(18+)</p>\
 	 				 <p id=\"childenText\" class=\"text-info\">Children(0-17)</p>\
@@ -74,9 +76,10 @@
                         <option value=\"4\">4</option>\
                         <option value=\"5\">5</option>\
                         <option value=\"6\">6</option>\
-                    </select>\
-                    <select id=\"children\">\
-                        <option value=\"0\">0</option>\
+                    </select>";
+
+                    appendRoomInfo+="<select id=\"children" +i+"\">";
+                        appendRoomInfo+="<option value=\"0\">0</option>\
                         <option value=\"1\">1</option>\
                         <option value=\"2\">2</option>\
                         <option value=\"3\">3</option>\
@@ -85,15 +88,33 @@
                         <option value=\"6\">6</option>\
                     </select>\
                     </div>";
-	 				for(i=0;i<val;i++)
-	 				{
-	 					 var individualRoom = "<div id=\"roomNumber\"><p>Room " + (i + 1) + "</p></div>";
+	 			
+	 					 var individualRoom = "<div id=roomNumber"+(i)+"><p>Room " + (i) + "</p></div>";
 	 					$("#rooms-info").append(individualRoom);
 	 					$("#rooms-info").append(appendRooms);
   						$("#rooms-info").append(appendRoomInfo);
   						}
 	 });
-	}
-	 );
+	 	 $("#childrenOnFlight").on("change",function(){
+	 	 				$("#flight-child-container").find("#childrenInfo").remove();
+	 	 				$("#departure-input-box").after(" <div id=\"childrenInfo\"></div>");
+	 	 				$("#childrenInfo").empty();
+	 				 val=$("#childrenOnFlight option:selected").val();
+	 				 	for(i=1;i<=val;i++)
+	 				{
+
+	 				 appendChildInfo="<select>";
+                   for(j=0;j<=16;j++)
+	 				{
+	 					appendChildInfo+="<option value="+j+">"+j+"</option>";
+	 				}
+	 				appendChildInfo+="</select>";
+	 					 var individualChild = "<p>Child-" + (i) +" Age</p>";
+	 					$("#childrenInfo").append(individualChild);
+  						$("#childrenInfo").append(appendChildInfo);
+  						}
+	 	 });
+
+	});
 	
 	

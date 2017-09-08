@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow: none;
+    clear: both;
 }
 form{
 	overflow: hidden;
@@ -8,9 +10,11 @@ form{
 }
 #main-container {
     width: 100%;
+    position: absolute;
     height: 450px;
     display: flex;
     padding-top: 30px;
+    height: auto;
 }
 
 #notification-container {
@@ -29,9 +33,9 @@ form{
 }
 #parent-container {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
-    background: url("http://1.bp.blogspot.com/-_aJuw2iA8Ak/VCgZ-lbj-VI/AAAAAAAAANA/9LGTsmP3OIE/s1600/tropical-dream-wallpapers_30260_1920x1080.jpg");
+   /* background: url("http://1.bp.blogspot.com/-_aJuw2iA8Ak/VCgZ-lbj-VI/AAAAAAAAANA/9LGTsmP3OIE/s1600/tropical-dream-wallpapers_30260_1920x1080.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
@@ -45,7 +49,7 @@ form{
     width: 100%;
     display: flex;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.75;
     flex-direction: column;
     padding-right: 40px;
     padding-left: 40px;
@@ -61,6 +65,8 @@ form{
     padding-left: 40px;
     border-radius: 7px;
     display: none;
+    height: : auto;
+
 }
 ul{
     display: flex;
@@ -71,19 +77,43 @@ li{
     display: flex;
     width: 60px;
     height: 40px;
+    padding-right: 20px;
     justify-content: center;
     border: 2px solid yellow;
      border-radius: 5px;
      border-spacing: 5px;
 }
-a{
+#flights{
+    background-image: url("plane.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blue;
     color:white;
 }
+#oneWay{
+    border:2px,solid,solid-black;
+    background-color: blue;
+    color:white;
+}
+#return{
+    border:2px,solid,solid-black;
+    background-color: inherit;
+    color:white;
+}
+#hotels{
+     background-image: url("hotel.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    color:white;
+}
+
 #button-container {
-    width: 100%;
+    width: 150px;
     height: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
    /* background-color: blue;*/
@@ -103,7 +133,7 @@ a{
     justify-content: center;
     opacity: 0.97;
     margin: 4px;
-    border-radius: 10px;
+    border-radius: 20px;
     align-content: center;
 }
 
@@ -149,15 +179,15 @@ button{
         background-color: deepskyblue;
 }
 .datepicker{
-			width: 90px;
+			width: 78px;
 			height: 20px;
 }
 .input-box-dimension {
     display: flex;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 300px;
-    height: 20px;
-    background-color: lightyellow;
+    height: 25px;
+    background-color: ghostwhite;
 }
 
 .trip-flex {
@@ -182,7 +212,7 @@ p {
 }
 #hotel-info-flex {
     display: flex;
-    width: 628px;
+    width: 500px;
     height: 40px;
     flex-direction: row;
     justify-content: space-between;
@@ -190,27 +220,27 @@ p {
 #adults {
     display: flex;
     border-radius: 15px;
-    width: 90px;
-    height: 30px;
+    width: 70px;
+    height: 18px;
     background-color: lightyellow;
 }
 
 #children {
     display: flex;
     border-radius: 15px;
-    width: 60px;
-    height: 30px;
+    width: 70px;
+    height: 18px;
     background-color: lightyellow;
 }
 
 #departure-input-box {
-    width: 628px;
+    width: 605px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 #hotel-input-box {
-    width: 628px;
+    width: 480px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -225,13 +255,23 @@ p {
     padding-top: 20px;
     padding: 30px;
 }
-#submit {
+
+#hotelSubmit {
     width: 150px;
     height: 50px;
     border-radius: 20px;
     background-color: yellow;
     font-weight: bold;
 }
+
+#flightSubmit {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: yellow;
+    font-weight: bold;
+}
+
 .departure-info-input-text {
     display: flex;
     justify-content: space-between;
@@ -242,4 +282,50 @@ p {
     display: flex;
     border-radius: 15px;
     background-color: lightyellow;
+}
+#extraRoom{
+            display: flex;
+            flex-direction: column;
+}
+#extraRooms{
+    display: flex;
+    flex-direction: column;
+}
+#roomNumber{
+            width:80px;
+            height:30px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+}
+#customerInfo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#room-info-flex
+{
+     display: flex;
+    width: 250px;
+    height: 45px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#room-input-box {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#rooms-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.category-buttons{
+    border: 2px solid solid-black;
+    border-radius: 5px;
+    padding-right: 10px;
+    height: 45px;
 }

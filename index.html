@@ -1,24 +1,21 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="expedia-assignment.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="expedia-assignment.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div id="notification-container">
     </div>
     <div id="logo-container">
-    <img src="expedialogo.png">
+    <img src="expedialogo.png" alt="Expedia">
     </div>
     <div id="main-container">
         <div id="parent-container">
+       
             <div id="flight-child-container">
                 <div id="button-container">
-              
                     <button class="category-buttons" id="flights">Flights</button>
                     <button class="category-buttons" id="hotels">Hotel</button>
-                  
                 </div>
                 <div id="trip-button-flex">
                     <button id="oneWay">One-way</button>
@@ -52,7 +49,7 @@
                         <option value="5">5</option>
                         <option value="6">6</option>
                     </select>
-                    <select id="children">
+                    <select id="childrenOnFlight">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -68,6 +65,10 @@
                     <input id="flightSubmit" type="button" value="Submit" name="submitButton">
                 </div>
                 </form>
+                 <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+        </video>
             </div>
              <div id="hotel-child-container">
                                <div id="button-container">
@@ -134,8 +135,15 @@
                      <input id="hotelSubmit" type="button" value="Submit" name="submitButton">
             </div>
                 </form>
+                 <!-- <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="https://www.youtube.com/watch?v=Rrw4eRzWBX4" type="video/webm">
+                <source src="https://www.youtube.com/watch?v=Rrw4eRzWBX4" type="video/mp4">
+        </video> -->
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="expedia-assignment.js"></script>
 </body>
 </html>
